@@ -207,6 +207,8 @@ public class LiveToLiveFailoverTest extends FailoverTest {
 
       crash(session);
 
+      Thread.sleep(100);
+
       ClientConsumer consumer = session.createConsumer(ADDRESS);
 
       session.start();
